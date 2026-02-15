@@ -14,7 +14,7 @@ class WorldLevel {
   }
 
   drawBackground() {
-    background(57, 84, 109);
+    background(220);
   }
 
   drawWorld() {
@@ -29,6 +29,10 @@ class WorldLevel {
     noStroke();
     fill(170, 190, 210);
     for (const o of this.obstacles) rect(o.x, o.y, o.w, o.h, o.r ?? 0);
+
+    fill(0);
+    textSize(32);
+    text(":(", 500, 540);
   }
 
   drawHUD(player, camX, camY) {
