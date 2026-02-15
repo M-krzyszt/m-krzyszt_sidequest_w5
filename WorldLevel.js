@@ -14,7 +14,7 @@ class WorldLevel {
   }
 
   drawBackground() {
-    background(220);
+    background(57, 84, 109);
   }
 
   drawWorld() {
